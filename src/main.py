@@ -1,4 +1,5 @@
 import pandas as pd
+import utm
 
 DATASET_DIR = '../datasets/'
 
@@ -15,6 +16,8 @@ def load_volcano_events():
 # TODO: add fill_blanks function
 def fill_blanks():
     pass
+
+# TODO: convert lat and lon into UTM
 
 def main():
     earthquakes = load_earthquakes()
