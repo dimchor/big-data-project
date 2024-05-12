@@ -12,6 +12,10 @@ def load_volcano_events():
     volcano_events = load_dataset_csv('volcano-events')
     return volcano_events.loc[volcano_events['Year'].eq(1965).idxmax():]
 
+# TODO: add fill_blanks function
+def fill_blanks():
+    pass
+
 def main():
     earthquakes = load_earthquakes()
     volcano_events = load_volcano_events()
