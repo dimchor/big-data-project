@@ -10,13 +10,15 @@ def convert_to_utm(df: pd.DataFrame):
     zone_numbers = []
     zone_letters = []
     drop_rows = []
-    for index, row in df.iterrows():
+    index = 0
+    for lat, lon in zip(df['Latitude'], df['Longitude']):
         try:
-            ret = utm.from_latlon(row['Latitude'], row['Longitude'])
+            ret = utm.from_latlon(lat, lon)
             zone_numbers.append(ret[2])
             zone_letters.append(ret[3])
         except:
             drop_rows.append(index)
+        index += 1
     del df['Latitude']
     del df['Longitude']
     df = df.drop(drop_rows)
