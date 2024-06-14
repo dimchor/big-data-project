@@ -26,8 +26,18 @@ def convert_to_utm(df: pd.DataFrame):
     df['Zone letter'] = zone_letters
     return df
 
+def remove_other_movements(df: pd.DataFrame):
+    drop_rows = []
+    index = 0
+    for type in df['Type']:
+        if type != 'Earthquake':
+            drop_rows.append(index)
+        index += 1
+    return df.drop(drop_rows)
+
 def load_earthquake_events():
     earthquake_events = load_dataset_csv('earthquakes')
+    earthquake_events = remove_other_movements(earthquake_events)
     earthquake_events = convert_to_utm(earthquake_events)
     return earthquake_events
 
