@@ -19,8 +19,8 @@ def convert_to_utm(df: pd.DataFrame):
         except:
             drop_rows.append(index)
         index += 1
-    del df['Latitude']
-    del df['Longitude']
+    # del df['Latitude']
+    # del df['Longitude']
     df = df.drop(drop_rows)
     df['Zone number'] = zone_numbers
     df['Zone letter'] = zone_letters
