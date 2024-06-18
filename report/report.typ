@@ -76,6 +76,9 @@ Database και Significant Earthquakes, 1965-2016.Η βάση δεδομένω�
 
 = Πειραματικά Αποτελέσματα
 
+// example
+#figure(image("utmworld.gif", width: 80%), supplement: "Εικόνα", caption: "Αυτή ειναι μια εικόνα")
+
 #pagebreak()
 
 #bib("bib.yml")
