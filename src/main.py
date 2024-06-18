@@ -7,7 +7,10 @@ def main():
     # print(earthquake_events)
     # print(volcano_events)
     df = association.hot_encoding(earthquake_events, volcano_events)
-    print(df.to_string())
+    # print(df.to_string())
+    df = association.apriori(df[['Earthquake', 'Volcanic eruption']])
+    print(df)
+    print(association.association_rules(df))
 
 if __name__ == "__main__":
     main()
