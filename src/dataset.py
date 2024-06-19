@@ -58,6 +58,3 @@ def load_volcano_events():
     volcano_events = convert_to_utm(volcano_events)
     return volcano_events
 
-# TODO: add fill_blanks function
-def fill_blanks():
-    pass

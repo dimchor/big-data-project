@@ -11,6 +11,8 @@ def main():
     df = association.apriori(df[['Earthquake', 'Volcanic eruption']])
     print(df)
     print(association.association_rules(df))
+    association_file = dataset.load_earthquake_events
+    
 
 if __name__ == "__main__":
     main()
