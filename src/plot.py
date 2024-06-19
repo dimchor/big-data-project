@@ -11,7 +11,11 @@ def load_dataset_csv(filename):
 
 def load_association():
     association_file = load_dataset_csv('association-file')
-    #plt.figure(figsize=(12, 8))
-    sns.countplot(data=association_file, x='Zone number', hue='Event')
-    plt.title('title')
-    plt.show()
+    sns.scatterplot(data=association_file, x='Zone number', y='Zone letter')
+    plt.title('Scatter Plot of Earthquakes and Volcanic Eruptions by Zone')
+    plt.xlabel('Zone Number')
+    plt.ylabel('Zone Letter')
+    
+plt.show()
+
+    

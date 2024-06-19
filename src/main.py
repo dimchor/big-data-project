@@ -1,5 +1,6 @@
 import dataset
 import association
+import plot
 
 def main():
     earthquake_events = dataset.load_earthquake_events()
@@ -11,7 +12,8 @@ def main():
     df = association.apriori(df[['Earthquake', 'Volcanic eruption']])
     print(df)
     print(association.association_rules(df))
-    association_file = dataset.load_earthquake_events
+    
+    #df= plot.load_association()
     
 
 if __name__ == "__main__":
