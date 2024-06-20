@@ -8,3 +8,15 @@ mining-of-massive-datasets:
   publisher: ΕΚΔΟΣΕΙΣ ΝΕΩΝ ΤΕΧΝΟΛΟΓΙΩΝ
   location: Αθήνα
   date: 2020
+
+earthquakes-volcanic-eruptions-review:
+  type: Article
+  title: A review framework of how earthquakes trigger volcanic eruptions
+  author:
+    - Seropian, G.
+    - Kennedy, B.M.
+    - Walter, T.R.
+    - et al.
+  date: 2021
+  serial-number:
+    doi: "10.1038/s41467-021-21166-8"
