@@ -27,5 +27,4 @@ def load_association():
 
     plt.show()
 
-
     
