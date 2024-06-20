@@ -16,6 +16,6 @@ def load_association():
     plt.xlabel('Zone Number')
     plt.ylabel('Zone Letter')
     
-plt.show()
+    plt.show()
 
     
