@@ -31,7 +31,7 @@ def hot_encoding(earthquakes: DataFrame, volcanic_eruptions: DataFrame):
     return df
 
 def apriori(df: DataFrame):
-    return fp.apriori(df, min_support = 0.1, use_colnames = 1, verbose = 1)
+    return fp.apriori(df, min_support = 0.14, use_colnames = 1, verbose = 1)
 
 def association_rules(df: DataFrame):
     return fp.association_rules(df, metric = "confidence", min_threshold = 0.6)
