@@ -13,7 +13,7 @@ def main():
     print(df)
     print(association.association_rules(df))
     
-    #df= plot.load_association()
+    df= plot.load_association()
     
 
 if __name__ == "__main__":
